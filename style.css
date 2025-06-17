@@ -1,0 +1,983 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: rgb(233, 0, 0); */
+    background-color: rgb(0, 0, 0);
+    padding: 0px 10px;
+    position: relative;
+}
+
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding-left: 25px;
+    padding-right: 0px;
+    position: sticky;
+    top: 0px;
+
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.navbarLeftSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px
+}
+
+.barCapsule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+    padding: 7px 10px;
+    border-radius: 30px;
+}
+
+.leftCapsulesection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.rightCapsulesection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.home {
+    /* width: 14px; */
+    background-color: #212121;
+    padding: 10px;
+    border-radius: 90px;
+    cursor: pointer;
+}
+
+.searchicon {
+    cursor: pointer;
+}
+
+.browsericon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.searchCapsuleSeparator {
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 3px;
+}
+
+.searchtext {
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.navbarRightSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+
+.leftbuttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* .rightbuttons {
+    display: flex;
+    gap: 5px;
+} */
+
+.premium {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+}
+
+
+@media (max-width: 1057px) {
+    .premium {
+        display: none;
+    }
+}
+
+
+
+.rightbuttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.installApp {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.installSvg {
+    display: flex;
+    align-items: center;
+}
+
+.installText {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #b3b3b3;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.logsignbuttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.account {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    /* background-color: #2e2b2b; */
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 5px;
+    /* Remove inner spacing */
+}
+
+.account span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 100, 55, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width: 930px) {
+    .rightbuttons {
+        /* display: none; */
+        gap: 10px;
+    }
+
+    .notification {
+        display: none;
+        /* gap: 5px; */
+    }
+
+    .friends {
+        display: none;
+    }
+
+    .navbar {
+        padding-right: 10px;
+    }
+}
+
+
+
+
+
+
+.container {
+    height: 75vh;
+    display: flex;
+    gap: 8px;
+    /* overflow-x: auto; */
+}
+
+
+
+
+
+
+
+.left {
+    width: 35vw;
+    /* height: 75vh; */
+    height: 77vh;
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 0px 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
+    /* background: linear-gradient(45deg, #141414, #252525); */
+    /* background: linear-gradient(135deg, #181818, #1f1f1f, #2a2a2a); */
+    /* background: linear-gradient(
+  135deg,
+  #181818 0%,
+  #1e1e1e 25%,
+  #242424 50%,
+  #2a2a2a 75%,
+  #303030 100%
+);
+background-blend-mode: overlay; */
+
+    width: 75vw;
+    height: 77vh;
+    background-color: #212121;
+    border-radius: 8px;
+    padding: 0px 8px;
+    overflow-y: auto;
+}
+
+.yourlibrary {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.yourlibraryLefttPart {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15.2px;
+    font-weight: 600
+}
+
+.yourlibraryRightPart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.create {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #1f1f1f;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.createText {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.expandSvg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftSectionCapsules {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 6px;
+    padding-left: 10px;
+}
+
+.leftSectionCapsules div {
+    color: white;
+    background-color: #2c2b2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13.2px;
+    font-weight: 700;
+}
+
+.leftRecentsSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 15px;
+}
+
+.leftRecentsSectionFirstdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftRecentsSectionSeconddiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.leftRecentsSectionText {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(146, 144, 144);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.leftRecentsSectionSvg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.playlistscontainer {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+
+}
+
+.likedplaylist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2c2b2b;
+    padding-right: 10px;
+    border-radius: 6px;
+}
+
+.playlistleftsection {
+    display: flex;
+    align-items: center;
+    padding: 8px 6px;
+    border-radius: 6px;
+    gap: 10px;
+}
+
+.thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbnail img {
+    border-radius: 4px;
+}
+
+.playlistinfo {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 6px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.playlistname {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.playlistextras {
+    color: rgb(156, 151, 151);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.folderscontainer {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+
+}
+
+.folder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.folderleftsection {
+    display: flex;
+    align-items: center;
+    padding: 8px 6px;
+    border-radius: 6px;
+    gap: 10px;
+}
+
+.folder .thumbnail {
+    border-radius: 4px;
+    background-color: #212121;
+    width: 46px;
+    height: 46px;
+}
+
+.folderinfo {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 6px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.foldername {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.folderextras {
+    color: rgb(156, 151, 151);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.playallbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: invert(1);
+    opacity: 0;
+    display: none;
+}
+
+/* Show button on hover for liked playlist */
+.likedplaylist:hover .playallbutton {
+    display: flex;
+    opacity: 0.5;
+}
+
+/* Show button on hover for folder */
+.folder:hover .playallbutton {
+    display: flex;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+.rightSectionCapsules {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 20px;
+}
+.hamburger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+    width: 28px;
+}
+
+.allCapsule {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    border-radius: 30px;
+    padding: 8px 12px;
+}
+
+.musicCapsule {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(78, 78, 78);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    border-radius: 30px;
+    padding: 8px 12px;
+}
+
+.rightsectionmaintext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 32px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.rightsectionmaintext h1 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.rightsectionmaintext a {
+    color: rgb(184, 182, 182);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.rightsectionmaintext a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+.playbar {
+    width: 98.5vw;
+    height: 10vh;
+    /* background-color: purple; */
+    background-color: black;
+    /* position: sticky; */
+    position: fixed;
+    bottom: 0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.playbarleftsection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 20vw;
+}
+
+.playbarthumbnail {
+    /* width: 10vw; */
+    /* width: 20%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    width: 54px;
+    height: 54px;
+    border-radius: 4px;
+}
+
+.playbarsongname {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    width: 75%;
+    white-space: nowrap;
+    overflow: hidden;
+    /* Allows animation on inline content */
+    /* animation: scrollText 25s linear infinite; */
+}
+
+.playbarmiddlesection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    /* width: 58vw; */
+}
+
+.songbuttons {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 10px;
+}
+
+.songseekbar {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 8px;
+    color: rgb(167, 165, 165);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.songseekbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.seekbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 4px;
+    width: 30vw;
+    position: relative;
+    border-radius: 4px;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    background-color: rgb(231, 137, 13);
+    border-radius: 50%;
+    left: 0;
+    position: absolute;
+}
+
+.duration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playbarrightsection {
+    /* width: 20vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+}
+
+.volumeicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.volumebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 4px;
+    width: 7vw;
+    position: relative;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+.songssection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Ensures children are centered horizontally */
+    gap: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.songsectionheading {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    padding: 5px 15px;
+    /* 15px inside padding */
+}
+
+.songsectionheading .title {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.songsectionheading .duration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.songseparatorline {
+    width: calc(60vw + 30px);
+    /* 15px extra on both sides */
+    height: 2px;
+    background-color: gray;
+}
+
+.songbox {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 60vw;
+    gap: 190px;
+    margin-top: 4px;
+    padding: 8px;
+    border-radius: 4px;
+    transition: all 0.1s ease-in-out;
+}
+
+.songtitle {
+    display: flex;
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+    gap: 0px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.songtitle svg {
+    fill: rgb(187, 180, 180);
+    /* For smooth appearance/disappearance */
+    max-width: 0;
+    max-height: 0;
+    /* Starts with no height */
+    opacity: 0;
+    /* Starts completely transparent */
+    overflow: hidden;
+    /* Hides any content that exceeds max-height */
+
+    /* Smooth transitions for all properties */
+    transition: color 0.3s ease-in-out,
+        /* For the fill color change */
+        max-height 0.3s ease,
+        max-width 0.3s ease,
+        /* For the height expansion/collapse */
+        opacity 0.3s ease;
+    /* For the fade in/out */
+}
+
+.songbox:hover .songtitle svg {
+    max-width: 24px;
+    max-height: 24px;
+    /* Expand to its actual height (adjust this value) */
+    fill: #1ed760;
+    opacity: 1;
+    /* Fade in to fully visible */
+}
+
+/* .songtitle svg:hover{
+        fill: #1ed760;
+} */
+.songbox:hover .songtitle {
+    gap: 10px;
+    transition: all 0.1s ease-in-out;
+    color: gray;
+}
+
+.songboxhover {
+    /* background: linear-gradient(gray); */
+    background-color: #2c2b2b;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.songbox:hover {
+    /* background: linear-gradient(gray); */
+    background-color: #2c2b2b;
+}
+
+.songduration {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
+    .songbox {
+        gap: 35px;
+        /* text-align: center; */
+        /* justify-content: space-between; */
+    }
+}
+
+@media (max-width: 700px) {
+    .left {
+        display: none;
+    }
+    .right {
+        width: 100vw;
+    }
+
+    .songsectionheading {
+        width: 80vw;
+    }
+
+    .songseparatorline {
+        width: calc(80vw + 20px);
+    }
+
+    .songbox {
+        width: 80vw;
+    }
+
+    .searchtext {
+        /* display: none; */
+        width: 15vw;
+        /* width: 100%; */
+    }
+
+    .home {
+        display: none;
+    }
+
+    .browsericon {
+        display: none;
+    }
+
+    .searchCapsuleSeparator {
+        display: none;
+    }
+
+    .searchbar {
+        width: 10px;
+    }
+
+    .barCapsule {
+        gap: 0px;
+    }
+}
+
+@media (max-width: 450px) {
+    .playbar {
+        flex-direction: column;
+        margin-top: 0px;
+        padding-top: 0px;
+        height: 11vh;
+        bottom: 5px;
+        padding: 0;
+        ;
+    }
+    .playbarthumbnail {
+        display: none;
+    }
+
+    .playbarleftsection {
+        gap: 0px;
+        width: auto;
+    }
+
+    .rightsectionmaintext {
+        padding-top: 10px;
+    }
+
+    .playbarsongname {
+        text-align: center;
+        padding-right: 30px;
+        white-space: nowrap;
+        width: 97vw;
+        overflow: hidden;
+        display: inline-block;
+        /* Allows animation on inline content */
+        animation: scrollText 25s linear infinite;
+        /* Adjust duration as needed */
+    }
+    .seekbar {
+        width: 75vw;
+    }
+
+    .volumebar {
+        width: 20vw;
+    }
+}
+
+
+
+
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+        /* Start completely off to the right */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Move completely off to the left */
+    }
+}

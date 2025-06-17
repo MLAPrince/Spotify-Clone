@@ -1,0 +1,57 @@
+play button green color
+background-color : #1ed760;
+
+left library main color and right cards color
+background-color : #121212;
+
+right section main background color
+#212121
+
+right card hover color
+#1f1f1f
+
+Library Cards color
+background-color : #1f1f1f;
+
+
+Search and browse icon color
+#545454
+
+
+navbar premium support etc color
+#787878
+
+install app and signup color
+#8c8c8c
+
+footer text color
+#494949
+
+
+instagram twitter and facebook span background color
+rgba(41,41,41,1)  or
+#292929
+
+
+right section/menu footer text color
+#828282
+
+
+
+most svg colors
+rgba(179,179,179,1)
+
+
+
+account span background color
+rgba(255, 100, 55, 1)
+
+
+
+
+
+
+
+
+
+rgb(221, 183, 14)

@@ -799,7 +799,7 @@ background-blend-mode: overlay; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+/*     gap: 10px; */
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -836,6 +836,7 @@ background-blend-mode: overlay; */
     /* 15px extra on both sides */
     height: 2px;
     background-color: gray;
+    margin-bottom: 15px;
 }
 
 .songbox {

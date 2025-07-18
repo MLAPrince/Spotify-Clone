@@ -24,7 +24,7 @@ I didn't made an exact one but used the interface from spotify and then added th
 ├── utitlity.css
 ├── Images/
 │   ├── *.svg, *.png, etc.
-├── MySongs/
+├── NCS/
 │   ├── *.mp3
 ```
 

@@ -41,7 +41,7 @@ I didn't made an exact one but used the interface from spotify and then added th
 
 ## Screenshots
 
-> <img width="1280" height="905" alt="Spotify Clone " src="https://github.com/user-attachments/assets/6f891cfe-5db3-4bfd-9508-e41a3097e507" />
+<img width="1280" height="905" alt="Spotify Clone " src="https://github.com/user-attachments/assets/6f891cfe-5db3-4bfd-9508-e41a3097e507" />
 
 
 ## Credits

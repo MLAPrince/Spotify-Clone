@@ -2,7 +2,7 @@ window.songSortDescending = true;
 
 async function getSongs() {
     // Add you own music fodler here (withtin the project folder)
-    let a = await fetch("http://127.0.0.1:3000/MySongs/");
+    let a = await fetch("http://127.0.0.1:3000/NCS/");
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;

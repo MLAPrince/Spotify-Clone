@@ -2,6 +2,7 @@
 
 Making my first project  i.e clone of Spotify web player  while learning web development
 This is a web-based music player inspired by Spotify, built with HTML, CSS, and JavaScript. The project lets you browse, sort, and play songs from a single local folder, with a modern UI and interactive playback controls.
+I didn't made an exact one but used the interface from spotify and then added the music player inside it
 
 ## Features
 

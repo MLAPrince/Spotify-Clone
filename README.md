@@ -40,7 +40,8 @@ This is a web-based music player inspired by Spotify, built with HTML, CSS, and 
 
 ## Screenshots
 
-> Add screenshots of your UI here for better presentation.
+> <img width="1280" height="905" alt="Spotify Clone " src="https://github.com/user-attachments/assets/6f891cfe-5db3-4bfd-9508-e41a3097e507" />
+
 
 ## Credits
 

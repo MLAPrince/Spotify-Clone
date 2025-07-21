@@ -6,7 +6,7 @@ I didn't made an exact one but used the interface from spotify and then added th
 
 ## Features
 
-- Browse songs from a single local folder (e.g., `MySongs`)
+- Browse songs from a single local folder (e.g., `NCS`)
 - Sort songs by title (ascending/descending)
 - Play, pause, next, previous song controls
 - Seekbar and progress bar for playback
@@ -31,7 +31,7 @@ I didn't made an exact one but used the interface from spotify and then added th
 ## How to Run
 
 1. Start a local web server (e.g., using Python, Node.js, or VS Code Live Server) in the project directory.
-2. Ensure your music files are placed in the `MySongs` folder.
+2. Ensure your music files are placed in the `NCS` folder.
 3. Open `index.html` in your browser.
 
 ## Requirements

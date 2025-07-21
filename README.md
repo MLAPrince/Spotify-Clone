@@ -51,4 +51,4 @@ I didn't made an exact one but used the interface from spotify and then added th
 
 ## License
 
-This project is for educational/personal use and is not affiliated with Spotify.
+This project is licensed under the [MIT License](LICENSE) and is for educational/personal use and is not affiliated with Spotify.

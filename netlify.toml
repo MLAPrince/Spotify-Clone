@@ -2,6 +2,14 @@
   publish = "/"
   command = ""
 
+# Enable directory listing for NCS folder
+[[redirects]]
+  from = "/NCS/*"
+  to = "/NCS/:splat"
+  status = 200
+  force = false
+
+# Handle SPA routing
 [[redirects]]
   from = "/*"
   to = "/index.html"

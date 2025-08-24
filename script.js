@@ -1,20 +1,29 @@
 window.songSortDescending = true;
 
 async function getSongs() {
-    // Add you own music fodler here (withtin the project folder)
-    let a = await fetch("http://127.0.0.1:3000/NCS/");
-    let response = await a.text();
-    let div = document.createElement("div");
-    div.innerHTML = response;
-    let as = div.getElementsByTagName("a");
-    let songs = [];
-    for (let index = 0; index < as.length; index++) {
-        const element = as[index];
-        if (element.href.endsWith(".mp3")) {
-            songs.push(element.href);
+    // Use relative path for production
+    try {
+        const response = await fetch("NCS/");
+        if (!response.ok) {
+            console.error("Failed to fetch songs:", response.status);
+            return [];
         }
+        const text = await response.text();
+        const div = document.createElement("div");
+        div.innerHTML = text;
+        const links = div.getElementsByTagName("a");
+        const songs = [];
+        
+        for (const link of links) {
+            if (link.href.endsWith(".mp3")) {
+                songs.push(link.href);
+            }
+        }
+        return songs;
+    } catch (error) {
+        console.error("Error loading songs:", error);
+        return [];
     }
-    return songs;
 }
 
 function formatDuration(seconds) {

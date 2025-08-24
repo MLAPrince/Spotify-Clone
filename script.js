@@ -1,29 +1,20 @@
 window.songSortDescending = true;
 
 async function getSongs() {
-    // Use relative path for production
-    try {
-        const response = await fetch("NCS/");
-        if (!response.ok) {
-            console.error("Failed to fetch songs:", response.status);
-            return [];
-        }
-        const text = await response.text();
-        const div = document.createElement("div");
-        div.innerHTML = text;
-        const links = div.getElementsByTagName("a");
-        const songs = [];
-        
-        for (const link of links) {
-            if (link.href.endsWith(".mp3")) {
-                songs.push(link.href);
-            }
-        }
-        return songs;
-    } catch (error) {
-        console.error("Error loading songs:", error);
-        return [];
-    }
+    // List of songs with their direct paths
+    const songs = [
+        'NCS/Electro-Light - Symbolism [NCS Release].mp3',
+        'NCS/Embrace the stars - Cinematic.mp3',
+        'NCS/Jarico - Island.mp3'
+    ];
+    
+    // Convert to full URLs if needed
+    return songs.map(song => {
+        // If the song path is already a full URL, return it as is
+        if (song.startsWith('http')) return song;
+        // Otherwise, make it a full URL relative to the current page
+        return window.location.origin + (song.startsWith('/') ? '' : '/') + song;
+    });
 }
 
 function formatDuration(seconds) {

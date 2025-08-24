@@ -1,15 +1,16 @@
 [build]
-  publish = "/"
+  publish = "."
   command = ""
 
-# Enable directory listing for NCS folder
+[build.environment]
+  NODE_VERSION = "16"
+
 [[redirects]]
   from = "/NCS/*"
   to = "/NCS/:splat"
   status = 200
-  force = false
+  force = true
 
-# Handle SPA routing
 [[redirects]]
   from = "/*"
   to = "/index.html"

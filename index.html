@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utitlity.css">
+</head>
+
+<body>
+    <div class="navbar">
+
+        <div class="navbarLeftSection">
+            <div class="logo "><img src="Images/logo.svg" alt="Spotify" width="34px"></div>
+            <div class="searchbar">
+                <div class="home bglightgray1 "><img src="Images/home.svg" alt="Home" width="24px"></div>
+                <div class="barCapsule bglightgray1">
+                    <div class="leftCapsulesection">
+                        <div class="searchicon "><img src="Images/search.svg" alt="Search" width="24px"></div>
+                        <input type="text" class="searchtext textcolorgray1" placeholder="Search" />
+                    </div>
+                    <div class="rightCapsulesection">
+                        <div class="searchCapsuleSeparator textcolorgray1">|</div>
+                        <div class="browsericon "><img src="Images/browse.svg" alt="Browse" width="24px"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="navbarRightSection">
+            <div class="buttons">
+                <div class="leftbuttons">
+                    <button class="premium leftbutton">Explore Premium</button>
+                </div>
+            </div>
+            <div class="rightbuttons">
+                <div class="installApp">
+                    <span class="installSvg"><img src="Images/install.svg" alt="Install" width="16px"></span>
+                    <span class="installText">Install App</span>
+                </div>
+                <div class="logsignbuttons">
+                    <span class="notification"><img src="Images/notification.svg" alt="Notification"
+                            width="16px"></span>
+                    <span class="friends"><img src="Images/friends.svg" alt="Friends" width="16px"></span>
+                    <button class="account"><span>M</span></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div class="yourlibrary">
+                <div class="yourlibraryLefttPart">Your Library</div>
+                <div class="yourlibraryRightPart">
+                    <div class="create">
+                        <img src="Images/add.svg" alt="Add" width="16px">
+                        <span class="createText">Create</span>
+                    </div>
+                    <div class="expandSvg"><img src="Images/expand.svg" alt="Expamd" width="16px"></div>
+                </div>
+            </div>
+            <div class="leftSectionCapsules">
+                <div class="lefSectionPlaylistCapsule">Playlists</div>
+                <div class="leftSectionArtistCapsule">Artists</div>
+            </div>
+            <div class="leftRecentsSection">
+                <div class="leftRecentsSectionFirstdiv"><img src="Images/search.svg" alt="Search" width="16px"></div>
+                <div class="leftRecentsSectionSeconddiv">
+                    <div class="leftRecentsSectionText">Recents</div>
+                    <div class="leftRecentsSectionSvg"><img src="Images/recent.svg" alt="Recent" width="16px"></div>
+                </div>
+            </div>
+            <div class="playlistscontainer">
+                <div class="likedplaylist">
+                    <div class="playlistleftsection">
+                        <div class="thumbnail"><img src="Images/like.png" alt="Like" width="46px"></div>
+                        <div class="playlistinfo">
+                            <span class="playlistname">Liked Songs</span>
+                            <span class="playlistextras">
+                                <span class="type">Playlilst</span>
+                                <span>•</span>
+                                <span class="playlistsongsnumbers">0 songs</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="playlistrightsection playallbutton">
+                        <img src="Images/play.svg" alt="Play All" width="26px">
+                    </div>
+                </div>
+                <div class="folderscontainer">
+                    <div class="folder">
+                        <div class="folderleftsection">
+                            <div class="thumbnail"><img src="Images/folder.svg" alt="Folder" width="34px"></div>
+                            <div class="folderinfo">
+                                <span class="foldername">NCS</span>
+                                <span class="folderextras">
+                                    <span class="type">Folder</span>
+                                    <span>•</span>
+                                    <span class="foldersongsnumbers">3 songs</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="folderrightsection playallbutton">
+                            <img src="Images/play.svg" alt="Play All" width="26px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="rightSectionCapsules">
+                <div class="hamburger"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="#ffffff" fill="none">
+                        <path d="M4 5L16 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 19L12 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg></div>
+                <div class="allCapsule">All</div>
+                <div class="musicCapsule">Music</div>
+            </div>
+            <div class="rightsectionmaintext">
+                <h1>Popular Songs</h1>
+                <a href="">Show all</a>
+            </div>
+            <div class="songssection">
+                <div class="songsectionheading">
+                    <div class="title" id="sortTitleBtn" style="cursor:pointer;user-select:none;">Title <span
+                            id="sortArrow">&#9650;</span></div>
+                    <div class="duration"><img src="Images/duration.svg" alt="Duration" width="18px"></div>
+                </div>
+                <div class="songseparatorline"></div>
+                <!-- <div class="songbox">
+                    <div class="songtitle"> <svg xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" width="32px"
+                            role="img" aria-hidden="true" class="e-9921-icon e-9921-baseline" viewBox="0 0 24 24">
+                            <path
+                                d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                            </path>
+                        </svg>
+                        Challa by Shaukat Ali (Late) - One of the greatest folk song ever by the
+                        folk Legend - OSA Worldwide(MP3_160K)</div>
+                    <div class="songduration">2:09</div>
+                </div> -->
+                <!-- <div class="songbox">
+                    <div class="songtitle">
+                        <svg xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" width="32px" role="img"
+                            aria-hidden="true" class="e-9921-icon e-9921-baseline" viewBox="0 0 24 24">
+                            <path
+                                d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                            </path>
+                        </svg>
+                        <div class="songtitletext">Piya Aaye Na_ Aashiqui 2 Full Song with Lyrics _ Aditya Roy Kapur_ Shraddha
+                        Kapoor(MP3_160K)</div>
+                    </div>
+                    <div class="songduration">5:10</div>
+                </div> -->
+                <!-- <div class="songbox">
+                    <div class="songtitle"><svg xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" width="32px"
+                            role="img" aria-hidden="true" class="e-9921-icon e-9921-baseline" viewBox="0 0 24 24">
+                            <path
+                                d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                            </path>
+                        </svg>
+                        
+                        <div class="songtitletext">
+                            <div class="songtitletext">Milne Hai Mujhse Aayi_ Aashiqui 2 Full Song with Lyrics _ Aditya Roy Kapur_
+                        Shraddha Kapoor(MP3_160K)</div>
+                        </div>
+                    </div>
+                    <div class="songduration">4:01</div>
+                </div>
+                <div class="songbox">
+                    <div class="songtitle"><svg xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" width="32px"
+                            role="img" aria-hidden="true" class="e-9921-icon e-9921-baseline" viewBox="0 0 24 24">
+                            <path
+                                d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                            </path>
+                        </svg>
+                        <div class="songtitletext">Dhanda Nyoliwala - Russian Bandana (Music Video) _ Deepesh Goyal _ VYRL
+                        Haryanvi(MP3_160K)</div></div>
+                    <div class="songduration">5:07</div>
+                </div>
+                <div class="songbox">
+                    <div class="songtitle"><svg xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" width="32px"
+                            role="img" aria-hidden="true" class="e-9921-icon e-9921-baseline" viewBox="0 0 24 24">
+                            <path
+                                d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                            </path>
+                        </svg>Hale Dil Lyrical _ Murder 2 _ Emran Hashmi _ Jacqueline Fernandez _ Harshit
+                        Saxena(MP3_160K)</div>
+                    <div class="songduration">2:54</div>
+                </div>
+                <div class="songbox">
+                    <div class="songtitle"><svg xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" width="32px"
+                            role="img" aria-hidden="true" class="e-9921-icon e-9921-baseline" viewBox="0 0 24 24">
+                            <path
+                                d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                            </path>
+                        </svg>ISHQ _Lost and found_ _Faheem Abdullah_Rauhan malik_ Amir Ameer_
+                        Live(MP3_160K)</div>
+                    <div class="songduration">4:19</div>
+                </div>
+                <div class="songbox">
+                    <div class="songtitle"><svg xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" width="32px"
+                            role="img" aria-hidden="true" class="e-9921-icon e-9921-baseline" viewBox="0 0 24 24">
+                            <path
+                                d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                            </path>
+                        </svg>Kaun Hoon Main - Lyrical Video _ Prince _ Vivek Oberoi_ Nandana Sen _ Atif
+                        Aslam(MP3_160K)</div>
+                    <div class="songduration">3:15</div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="playbar">
+        <div class="playbarleftsection">
+            <div class="playbarthumbnail"><img src="Images/music.svg" alt="Music" width="24px"></div>
+            <div class="playbarsongname">Challa by Shaukat Ali (Late) - One of the greatest folk song ever by the folk
+                Legend - OSA Worldwide(MP3_160K)</div>
+        </div>
+        <div class="playbarmiddlesection">
+            <div class="songbuttons">
+                <div class="previousbutton"><img src="Images/previous.svg" alt="Previous" width="24px"></div>
+                <div class="playbutton" id="play"><img src="Images/play2.svg" alt="Previous" width="24px"></div>
+                <div class="nextbutton"><img src="Images/next.svg" alt="Previous" width="24px"></div>
+            </div>
+            <div class="songseekbar">
+                <div class="currentduration duration">1:09</div>
+                <div class="seekbar">
+                    <!-- <div class="bar"></div> -->
+                    <div class="circle"></div>
+                </div>
+                <div class="totalduration duration">3:04</div>
+            </div>
+        </div>
+        <div class="playbarrightsection">
+            <div class="volume">
+                <div class="volumeicon"><img src="Images/volumefull.svg" alt="Volume" width="20px"></div>
+                <div class="volumebar">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
